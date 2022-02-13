@@ -6,7 +6,7 @@ game.StarterGui:SetCore("SendNotification", {
 Title = "MultiFarm";
 Text = "Your Exploit is not supported.";
 Duration = "7";
-	})
+})
 end
 syn.request(
 {
