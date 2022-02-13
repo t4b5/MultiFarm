@@ -1,29 +1,29 @@
 if syn then
-queue_on_teleport = syn.queue_on_teleport
-request = syn.request
+	queue_on_teleport = syn.queue_on_teleport
+	request = syn.request
 else
-game.StarterGui:SetCore("SendNotification", {
-Title = "MultiFarm";
-Text = "Your Exploit is not supported.";
-Duration = "7";
-})
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "MultiFarm";
+		Text = "Your Exploit is not supported.";
+		Duration = "7";
+	})
 end
 syn.request(
-{
-Url = 'http://127.0.0.1:6463/rpc?v=1',
-Method = 'POST',
-Headers = {
-['Content-Type'] = 'application/json',
-['origin'] = 'https://ptb.discord.com',
-},
-Body = game:GetService('HttpService'):JSONEncode({
-['args'] = {
-['code'] = "PcmUgVHxd4",
-},
-['cmd'] = 'INVITE_BROWSER',
-['nonce'] = 'YOU'
-})
-})
+	{
+		Url = 'http://127.0.0.1:6463/rpc?v=1',
+		Method = 'POST',
+		Headers = {
+			['Content-Type'] = 'application/json',
+			['origin'] = 'https://ptb.discord.com',
+		},
+		Body = game:GetService('HttpService'):JSONEncode({
+			['args'] = {
+				['code'] = "PcmUgVHxd4",
+			},
+			['cmd'] = 'INVITE_BROWSER',
+			['nonce'] = 'YOU'
+		})
+	})
 rconsolename("MultiFarm")
 rconsoleprint("@@RED@@")
 rconsoleprint([[
@@ -46,44 +46,50 @@ rconsoleprint("[!] Loaded Game\n")
 rconsolename("MultiFarm - Loaded Game")
 rconsoleprint("@@RED@@")
 if game.PlaceId == 537413528 then
-rconsoleprint("[!] Detected Game\n")
-rconsolename("MultiFarm - Detected Game")
-rconsoleprint("[!] Starting Auto-Farm\n")
-rconsolename("MultiFarm - Starting AutoFarm")
-wait()
-rconsoleprint("@@DARK_GRAY@@")
-rconsoleprint(">-------------------------------------------------------------------------------<")
-rconsolename("MultiFarm")
-wait()
-while wait() do
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-tabzFunny:play() tabzFunny.Completed:wait()
-game.Players.LocalPlayer.Character.Humanoid.Health = 0
-wait(8)
-end
+	rconsoleprint("[!] Detected Game\n")
+	rconsolename("MultiFarm - Detected Game")
+	rconsoleprint("[!] Starting Auto-Farm\n")
+	rconsolename("MultiFarm - Starting AutoFarm")
+	wait()
+	rconsoleprint("@@DARK_GRAY@@")
+	rconsoleprint(">-------------------------------------------------------------------------------<")
+	rconsolename("MultiFarm")
+	wait()
+	local MultiFarm = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		MultiFarm:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	while wait() do
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+		tabzFunny:play() tabzFunny.Completed:wait()
+		game.Players.LocalPlayer.Character.Humanoid.Health = 0
+		wait(8)
+	end
 else
-rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
-rconsoleprint("@@DARK_GRAY@@")
-rconsoleprint(">-------------------------------------------------------------------------------<")
-rconsolename("MultiFarm - Unsupported Game")
+	rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
+	rconsoleprint("@@DARK_GRAY@@")
+	rconsoleprint(">-------------------------------------------------------------------------------<")
+	rconsolename("MultiFarm - Unsupported Game")
 end
