@@ -1,3 +1,4 @@
+v = "0.0.2"
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
@@ -60,8 +61,8 @@ else
 		rconsolename("MultiFarm - Starting AutoFarm")
 		wait()
 		rconsoleprint("@@DARK_GRAY@@")
-		rconsoleprint(">-------------------------------------------------------------------------------<")
-		rconsolename("MultiFarm")
+		rconsoleprint(">-------------------------------------------------------------------------------<\n")
+		rconsolename("MultiFarm v"..v)
 		wait()
 		local MultiFarm = game:GetService("VirtualUser")
 		game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -98,7 +99,7 @@ else
 	else
 		rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
 		rconsoleprint("@@DARK_GRAY@@")
-		rconsoleprint(">-------------------------------------------------------------------------------<")
+		rconsoleprint(">-------------------------------------------------------------------------------<\n")
 		rconsolename("MultiFarm - Unsupported Game")
 	end
 end
