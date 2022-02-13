@@ -72,29 +72,62 @@ else
 		end)
 		while wait() do
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
-			tabzFunny:play() tabzFunny.Completed:wait()
+			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
+				tabzFunny:play() tabzFunny.Completed:wait()
+			else
+			end
 			game.Players.LocalPlayer.Character.Humanoid.Health = 0
-			wait(10)
+			wait(8)
 		end
 	else
 		rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
