@@ -66,10 +66,10 @@ else
 		rconsoleprint("[!] Starting Auto-Farm\n")
 		if game.Players.LocalPlayer:IsInGroup(2782840) then
 			rconsoleprint("@@LIGHT_GRAY@@")
-			rconsoleprint("[-] You are in the Build A Boat Group [Chillz Studios], you will receive x1.25 gold\n")
+			rconsoleprint("[|] You are in the Build A Boat Group [Chillz Studios], you will receive x1.25 gold [80-100 instead of 71-80]\n")
 		else
 			rconsoleprint("@@LIGHT_GRAY@@")
-			rconsoleprint("[-] You are not in the Build A Boat Group [Chillz Studios], if you join it you receive x1.25 gold\n")
+			rconsoleprint("[-] You are not in the Build A Boat Group [Chillz Studios], if you join it you receive x1.25 gold [80-100 instead of 71-80]\n")
 		end
 		rconsolename("MultiFarm v"..v.." - Starting AutoFarm")
 		wait()
