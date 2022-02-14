@@ -1,10 +1,4 @@
 v = "0.0.4"
-c = [[
-- added this useless changelog just for style
-- fixing the humanoidrootpart bug stopping the farm right now
-- fixed the humanoidrootpart bug by deleting the kill parts, big brain
-- slowered tween speed so u get 72 gold instead of 40-50
-]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
@@ -61,6 +55,12 @@ else
 	rconsolename("MultiFarm v"..v.." - Loaded Game")
 	rconsoleprint("@@RED@@")
 	if game.PlaceId == 537413528 then
+		c = [[
+- added this useless changelog just for style
+- fixing the humanoidrootpart bug stopping the farm right now
+- fixed the humanoidrootpart bug by deleting the kill parts, big brain
+- slowered tween speed so u get 72 gold instead of 40-50
+]]
 		rconsoleprint("[!] Detected Game\n")
 		rconsolename("MultiFarm v"..v.." - Detected Game")
 		rconsoleprint("[!] Starting Auto-Farm\n")
