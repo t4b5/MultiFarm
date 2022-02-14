@@ -1,4 +1,4 @@
-v = "0.0.3"
+v = "0.0.2"
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
@@ -71,7 +71,6 @@ else
 			MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
 		while wait() do
-			game.Players.LocalPlayer.Character.UpperTorso.Anchored = true
 			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				tabzFunny:play() tabzFunny.Completed:wait()
