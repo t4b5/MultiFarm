@@ -1,7 +1,9 @@
-v = "0.0.3"
+v = "0.0.4"
 c = [[
 - added this useless changelog just for style
 - fixing the humanoidrootpart bug stopping the farm right now
+- fixed the humanoidrootpart bug by deleting the kill parts, big brain
+- slowered tween speed so u get 72 gold instead of 40-50
 ]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
@@ -53,16 +55,16 @@ else
 	rconsoleprint("@@DARK_GRAY@@")
 	rconsoleprint(">-------------------------------------------------------------------------------<\n")
 	rconsoleprint("[:] Loading Game\n")
-	rconsolename("MultiFarm - Loading Game")
+	rconsolename("MultiFarm v"..v.." - Loading Game")
 	repeat wait() until game:IsLoaded()
 	rconsoleprint("[!] Loaded Game\n")
-	rconsolename("MultiFarm - Loaded Game")
+	rconsolename("MultiFarm v"..v.." - Loaded Game")
 	rconsoleprint("@@RED@@")
 	if game.PlaceId == 537413528 then
 		rconsoleprint("[!] Detected Game\n")
-		rconsolename("MultiFarm - Detected Game")
+		rconsolename("MultiFarm v"..v.." - Detected Game")
 		rconsoleprint("[!] Starting Auto-Farm\n")
-		rconsolename("MultiFarm - Starting AutoFarm")
+		rconsolename("MultiFarm v"..v.." - Starting AutoFarm")
 		wait()
 		rconsoleprint("@@DARK_GRAY@@")
 		rconsoleprint(">-------------------------------------------------------------------------------<\n")
@@ -76,81 +78,93 @@ else
 			wait(1)
 			MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 		end)
+		game.Workspace.BoatStages.NormalStages.CaveStage1.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage2.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage3.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage4.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage5.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage6.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage7.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage8.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage9.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.CaveStage10.Water:Destroy()
+		game.Workspace.BoatStages.NormalStages.ForestStage.Water:Destroy()
 		while wait() do
+			game.Workspace.BoatStages.OtherStages:ClearAllChildren()
 			repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 			wait(1)
 			repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 1369.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2139.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 2909.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 3679.09009, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 4449.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5219.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 5989.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 6759.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 7529.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
 				tabzFunny:play() tabzFunny.Completed:wait()
 			else
 			end
-			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
+			local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1.8), {CFrame = CFrame.new(-51.5656433, 65.0000458, 8299.08984, 1, 0, 0, 0, 1, 0, 0, 0, 1)})
 			if game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart") then
 				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				wait()
@@ -164,6 +178,8 @@ else
 		rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
 		rconsoleprint("@@DARK_GRAY@@")
 		rconsoleprint(">-------------------------------------------------------------------------------<\n")
-		rconsolename("MultiFarm - Unsupported Game")
+		rconsoleprint("[  Changelog v"..v.."  ]\n")
+		rconsoleprint(c)
+		rconsolename("MultiFarm v"..v.." - Unsupported Game")
 	end
 end
