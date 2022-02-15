@@ -17,6 +17,8 @@ else
 end
 if game:GetService("CoreGui"):FindFirstChild(game.Players.LocalPlayer.Name.."-MultiFarm") then
 else
+	rconsoleclear()
+	wait()
 	local check = Instance.new("Texture")
 	check.Name = game.Players.LocalPlayer.Name.."-MultiFarm"
 	check.Parent = game:GetService("CoreGui")
