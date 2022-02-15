@@ -1,4 +1,9 @@
 v = "0.0.5"
+g = [[
+[1] Build A Boat For Treasure | https://www.roblox.com/games/537413528/
+[2] BEAR | https://www.roblox.com/games/3203685552/
+[3] Impossible Squid Game | https://www.roblox.com/games/7198500613/
+]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
 	request = syn.request
@@ -249,8 +254,8 @@ else
 				rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
 				rconsoleprint("@@DARK_GRAY@@")
 				rconsoleprint(">-------------------------------------------------------------------------------<\n")
-				rconsoleprint("[  Changelog v"..v.."  ]\n")
-				rconsoleprint(c)
+				rconsoleprint("[  Supported Games  ]\n")
+				rconsoleprint(g)
 				rconsolename("MultiFarm v"..v.." - Unsupported Game")
 			end
 		end
