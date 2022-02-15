@@ -187,6 +187,7 @@ else
 		if game.PlaceId == 7198500613 then
 			c = [[
 - theres no updates required to this one ngl lol
+- nvm, fixed the humanoidrootpart bug.. again
 ]]
 			rconsoleprint("[!] Detected Game\n")
 			rconsolename("MultiFarm v"..v.." - Detected Game")
@@ -206,6 +207,7 @@ else
 				MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 			end)
 			while wait(0.3) do
+				repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4.62381363, 88.7803345, 838.655701, 1, 0, 0, 0, 1, 0, 0, 0, 1)
 			end
 		else
