@@ -22,10 +22,6 @@ else
 	})
 end
 if game:GetService("CoreGui"):FindFirstChild(game.Players.LocalPlayer.Name.."-MultiFarm") then
-	--[[
-	Hello Alex, I know that your here to skid: just like you skidded off Da Hood scripts for your "NVIDIA GUI"
-	https://robloxscripts.com/da-hood-nvidia-gui-new/
-	]]--
 else
 	rconsoleclear()
 	wait()
