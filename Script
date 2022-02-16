@@ -278,12 +278,15 @@ else
 					end)
 					local dumbfucks = game.Players:GetChildren()
 					while wait(1) do
-						repeat wait(3) until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+						repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 						for i = 1, #dumbfucks do
+							repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 							wait(0.2)
+							repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 							local dumbfucks = dumbfucks[i]
 							repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(dumbfucks.Character.HumanoidRootPart.Position)
+							repeat wait() until wait() game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 						end
 						end
 						else
