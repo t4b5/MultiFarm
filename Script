@@ -4,12 +4,13 @@ I work hard for this project and since it's free and open-sourced I would apprec
 https://www.paypal.com/paypalme/tabzhax
 I support EUR, USD and GBP [Pounds]
 ]]--
-v = "0.0.5"
+v = "0.0.6"
 g = [[
 [1] Build A Boat For Treasure | https://www.roblox.com/games/537413528/
 [2] BEAR | https://www.roblox.com/games/3203685552/
 [3] Impossible Squid Game | https://www.roblox.com/games/7198500613/
 [4] Gorilla Tag Professional | https://www.roblox.com/games/8690998110/
+[5] Slide House Tumble | https://www.roblox.com/games/8438158667/
 ]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
@@ -295,16 +296,53 @@ else
 							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(dumbfucks.Character.HumanoidRootPart.Position)
 							repeat wait(1.5) until wait(1) game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 						end
+					end
+				else
+					--https://www.roblox.com/games/8438158667/Slide-House-Tumble-15-NEW-HOUSES
+					if game.PlaceId == 8438158667 then
+						c = [[
+- theres no updates required to this one, cant wait for another humanoidrootpart bug
+]]
+						rconsoleprint("[!] Detected Game\n")
+						rconsolename("MultiFarm v"..v.." - Detected Game")
+						rconsoleprint("[!] Starting Auto-Farm\n")
+						rconsolename("MultiFarm v"..v.." - Starting AutoFarm")
+						wait()
+						rconsoleprint("@@DARK_GRAY@@")
+						rconsoleprint(">-------------------------------------------------------------------------------<\n")
+						rconsoleprint("[  Changelog v"..v.."  ]\n")
+						rconsoleprint(c)
+						rconsolename("MultiFarm v"..v)
+						wait()
+						local MultiFarm = game:GetService("VirtualUser")
+						game:GetService("Players").LocalPlayer.Idled:connect(function()
+							MultiFarm:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+							wait(1)
+							MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+						end)
+						local dumbfucks = game.Players:GetChildren()
+						while wait(6.5) do
+							game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+							local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(-174, 4864, -57774)})
+							tabzFunny:play() tabzFunny.Completed:wait()
+							game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+							wait(1)
+							local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(0.4), {CFrame = CFrame.new(-121, 4861.71, -57796.5)})
+							tabzFunny:play() tabzFunny.Completed:wait()
+							game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+							wait(1)
+							game.Players.LocalPlayer.Character.Humanoid.Health = 0
 						end
-						else
-				rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
-				rconsoleprint("@@DARK_GRAY@@")
-				rconsoleprint(">-------------------------------------------------------------------------------<\n")
-				rconsoleprint("[  Supported Games  ]\n")
-				rconsoleprint(g)
-				rconsolename("MultiFarm v"..v.." - Unsupported Game")
+					else
+					rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
+					rconsoleprint("@@DARK_GRAY@@")
+					rconsoleprint(">-------------------------------------------------------------------------------<\n")
+					rconsoleprint("[  Supported Games  ]\n")
+					rconsoleprint(g)
+					rconsolename("MultiFarm v"..v.." - Unsupported Game")
+				end
 			end
 		end
-	end
-	end
-	end
+		end
+		end
+end
