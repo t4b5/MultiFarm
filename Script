@@ -11,7 +11,7 @@ g = [[
 [3] Impossible Squid Game | https://www.roblox.com/games/7198500613/
 [4] Gorilla Tag Professional | https://www.roblox.com/games/8690998110/
 [5] Slide House Tumble | https://www.roblox.com/games/8438158667/
-[6] Cart Ride into Dave and Bambi | https://www.roblox.com/games/8165840202/
+[5] Cart Ride into Dave and Bambi | https://www.roblox.com/games/8165840202/
 ]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
@@ -267,6 +267,7 @@ else
 					c = [[
 - theres no updates required to this one ngl lol
 - cant fix humanoidrootpart bug cuz the game respawns u like every fucking second
+- hopefully fixed the humanoidrootpart bug
 ]]
 					rconsoleprint("[!] Detected Game\n")
 					rconsolename("MultiFarm v"..v.." - Detected Game")
@@ -294,7 +295,7 @@ else
 							repeat wait(1.5) until wait(1) game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 							local dumbfucks = dumbfucks[i]
 							repeat wait(1.5) until wait(1) game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(dumbfucks.Character.HumanoidRootPart.Position)
+							game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").CFrame = CFrame.new(dumbfucks.Character:WaitForChild("HumanoidRootPart").Position)
 							repeat wait(1.5) until wait(1) game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
 						end
 					end
