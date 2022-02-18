@@ -11,6 +11,7 @@ g = [[
 [3] Impossible Squid Game | https://www.roblox.com/games/7198500613/
 [4] Gorilla Tag Professional | https://www.roblox.com/games/8690998110/
 [5] Slide House Tumble | https://www.roblox.com/games/8438158667/
+[5] Cart Ride into Dave and Bambi | https://www.roblox.com/games/8165840202/
 ]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
@@ -334,6 +335,45 @@ else
 							game.Players.LocalPlayer.Character.Humanoid.Health = 0
 						end
 					else
+						--https://www.roblox.com/games/8165840202/CHAOTICS-Cart-Ride-into-Dave-and-Bambi
+						if game.PlaceId == 8165840202 then
+							c = [[
+- theres no updates required to this one, cant wait for the 5000th humanoidrootpart bug
+]]
+							rconsoleprint("[!] Detected Game\n")
+							rconsolename("MultiFarm v"..v.." - Detected Game")
+							rconsoleprint("[!] Starting Auto-Farm\n")
+							rconsolename("MultiFarm v"..v.." - Starting AutoFarm")
+							wait()
+							rconsoleprint("@@DARK_GRAY@@")
+							rconsoleprint(">-------------------------------------------------------------------------------<\n")
+							rconsoleprint("[  Changelog v"..v.."  ]\n")
+							rconsoleprint(c)
+							rconsolename("MultiFarm v"..v)
+							wait()
+							local MultiFarm = game:GetService("VirtualUser")
+							game:GetService("Players").LocalPlayer.Idled:connect(function()
+								MultiFarm:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+								wait(1)
+								MultiFarm:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+							end)
+							while wait(5) do
+								local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(game.Workspace.HeartishEndPart.Position)})
+								tabzFunny:play() tabzFunny.Completed:wait()
+								wait(5)
+								local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(game.Workspace.DaveEndPart.Position)})
+								tabzFunny:play() tabzFunny.Completed:wait()
+								wait(5)
+								local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(game.Workspace.BanduEndPart.Position)})
+								tabzFunny:play() tabzFunny.Completed:wait()
+								wait(5)
+								local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(game.Workspace.BambiEndPart.Position)})
+								tabzFunny:play() tabzFunny.Completed:wait()
+								wait(5)
+								local tabzFunny = game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"), TweenInfo.new(1), {CFrame = CFrame.new(game.Workspace.ExpungedEndPart.Position)})
+								tabzFunny:play() tabzFunny.Completed:wait()
+							end
+						else
 						rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
 						rconsoleprint("@@DARK_GRAY@@")
 						rconsoleprint(">-------------------------------------------------------------------------------<\n")
@@ -344,5 +384,6 @@ else
 				end
 			end
 		end
-	end
+		end
+		end
 end
