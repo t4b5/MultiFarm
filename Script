@@ -32,7 +32,7 @@ else
 	--[[
 	why are u here
 	]]--
-	syn.request(
+	request(
 		{
 			Url = 'http://127.0.0.1:6463/rpc?v=1',
 			Method = 'POST',
@@ -334,15 +334,15 @@ else
 							game.Players.LocalPlayer.Character.Humanoid.Health = 0
 						end
 					else
-					rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
-					rconsoleprint("@@DARK_GRAY@@")
-					rconsoleprint(">-------------------------------------------------------------------------------<\n")
-					rconsoleprint("[  Supported Games  ]\n")
-					rconsoleprint(g)
-					rconsolename("MultiFarm v"..v.." - Unsupported Game")
+						rconsoleprint("[?] Unsupported Game, if you want it supported submit it to the discord\n")
+						rconsoleprint("@@DARK_GRAY@@")
+						rconsoleprint(">-------------------------------------------------------------------------------<\n")
+						rconsoleprint("[  Supported Games  ]\n")
+						rconsoleprint(g)
+						rconsolename("MultiFarm v"..v.." - Unsupported Game")
+					end
 				end
 			end
 		end
-		end
-		end
+	end
 end
