@@ -11,7 +11,7 @@ g = [[
 [3] Impossible Squid Game | https://www.roblox.com/games/7198500613/
 [4] Gorilla Tag Professional | https://www.roblox.com/games/8690998110/
 [5] Slide House Tumble | https://www.roblox.com/games/8438158667/
-[5] Cart Ride into Dave and Bambi | https://www.roblox.com/games/8165840202/
+[6] Cart Ride into Dave and Bambi | https://www.roblox.com/games/8165840202/
 ]]
 if syn then
 	queue_on_teleport = syn.queue_on_teleport
