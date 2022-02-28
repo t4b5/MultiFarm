@@ -1,3 +1,9 @@
+game.StarterGui:SetCore("SendNotification", {
+		Title = "INFORMATION");
+		Text = "my 2 accs got ratelimited bruv";
+		Duration = "7";
+	})
+
 --[[
 
  /$$      /$$           /$$   /$$     /$$ /$$$$$$$$                              
